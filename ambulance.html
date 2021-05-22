@@ -9,7 +9,7 @@
 </head>
 <body class="bg-light">
     <div class="container my-4">
-        <h2 class="py-4">Ambulance Request Form</h2>
+        <h2 id='form-title' class="py-4">Ambulance Request Form</h2>
         <form action="" id="patient_form">
             <div class="mb-3">
                 <label for="patient_name" class="form-label">Patient Name</label>
@@ -35,11 +35,11 @@
             </div>
             <div class="mb-3">
                 <label for="number" class="form-label">Primary Number</label>
-                <input type="text" class="form-control" name="Primary Number" id="number">
+                <input type="text" class="form-control" name="Primary Number" id="number" data-type="phone">
             </div>
             <div class="mb-3">
                 <label for="alternate_number" class="form-label">Alternate Number</label>
-                <input type="text" class="form-control" name="Alternate Number" id="alternate_number">
+                <input type="text" class="form-control" name="Alternate Number" id="alternate_number" data-type="phone">
             </div>
             <div class="mb-3">
                 <label for="covid_patient" class="form-label">Are they Covid Patient?</label>

@@ -9,7 +9,7 @@
 </head>
 <body class="bg-light">
     <div class="container my-4">
-        <h2 class="py-4">Blood RequestForm</h2>
+        <h2 id='form-title' class="py-4">Blood RequestForm</h2>
         <form action="" id="patient_form">
             <div class="mb-3">
                 <label for="patient_name" class="form-label">Patient Name</label>
@@ -41,11 +41,11 @@
             </div>
             <div class="mb-3">
                 <label for="contact_number" class="form-label">Contact Number</label>
-                <input type="text" class="form-control" name="Contact number" id="contact_number">
+                <input type="text" class="form-control" name="Contact number" id="contact_number" data-type="phone">
             </div>
             <div class="mb-3">
                 <label for="alternate_number" class="form-label">Alternate Number</label>
-                <input type="text" class="form-control" name="Alternate number" id="alternate_number">
+                <input type="text" class="form-control" name="Alternate number" id="alternate_number" data-type="phone">
             </div>
             <div class="mb-3">
                 <label for="address" class="form-label">Complete address</label>
