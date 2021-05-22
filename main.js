@@ -29,7 +29,7 @@ form.onsubmit = (ev) => {
 
   const formElements = Array.from(form.elements);
 
-  const patientData = [];
+  const patientData = ["Generated from http://covid-data-collection.netlify.com/"];
   if (formTitle !== null) {
     patientData.push("*" + formTitle + "*");
     patientData.push("");
@@ -41,7 +41,7 @@ form.onsubmit = (ev) => {
     patientData.push(line);
   });
 
-  patientData.push('\n');
+  patientData.push('');
 
   formElements.slice(-3, -1).forEach((e, i) => {
     patientData.push(`${e.name}: ${e.value}`);
