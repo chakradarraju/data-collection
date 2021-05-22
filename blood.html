@@ -12,114 +12,53 @@
         <h2 class="py-4">Blood RequestForm</h2>
         <form action="" id="patient_form">
             <div class="mb-3">
-                <label for="requirement" class="form-label">Requirement</label>
-                <select name="Requirement" id="requirement" class="form-select">
-                    <option>Food</option>
-                    <option>Medicine</option>
-                    <option>Grocery</option>
-                    <option>Stay</option>
-                </select>
-            </div>
-
-            <div class="mb-3">
                 <label for="patient_name" class="form-label">Patient Name</label>
                 <input type="text" class="form-control" name="Patient Name" id="patient_name">
             </div>
-
             <div class="mb-3">
                 <label for="age" class="form-label">Age</label>
                 <input type="text" class="form-control" name="Age" id="age">
             </div>
-
             <div class="mb-3">
                 <label for="gender" class="form-label">Gender</label>
                 <input type="text" class="form-control" name="Gender" id="gender">
             </div>
-
-            <div class="mb-3">
-                <label for="address" class="form-label">Complete address</label>
-                <textarea type="text" class="form-control" name="Complete address" id="address"></textarea>
-            </div>
-
-            <div class="mb-3">
-                <label for="symptoms" class="form-label">Symptoms</label>
-                <input type="text" class="form-control" name="Symptoms" id="symptoms">
-            </div>
-
-            <div class="mb-3">
-                <label for="oxygen" class="form-label">SpO2 level</label>
-                <input type="text" class="form-control" name="Sp02 level" id="oxygen">
-            </div>
-
-            <div class="mb-3">
-                <label for="cylinder" class="form-label">Is the patient on an oxygen cylinder</label>
-                <input type="text" class="form-control" name="Is the patient on an oxygen cylinder" id="cylinder">
-            </div>
-
-            <div class="mb-3">
-                <label for="searching" class="form-label">Searching hospital beds since</label>
-                <input type="text" class="form-control" name="Searching hospital beds since" id="searching">
-            </div>
-
-            <div class="mb-3">
-                <label for="result" class="form-label">Covid result</label>
-                <input type="text" class="form-control" name="Covid result" id="result">
-            </div>
-
-            <div class="mb-3">
-                <label for="number" class="form-label">Contact Number</label>
-                <input type="text" class="form-control" name="Contact Number" id="number">
-            </div>
-
-            <div class="mb-3">
-                <label for="contact" class="form-label">Contact person &nbsp; Relation to patient</label>
-                <input type="text" class="form-control" name="Contact person & Relation to patient" id="contact">
-            </div>
-
             <div class="mb-3">
                 <label for="blood" class="form-label">Blood group</label>
                 <input type="text" class="form-control" name="Blood group" id="blood">
             </div>
-
             <div class="mb-3">
-                <label for="city" class="form-label">City</label>
-                <input type="text" class="form-control" name="City" id="city">
+                <label for="units" class="form-label">No of units required</label>
+                <input type="text" class="form-control" name="Units" id="units">
             </div>
-
             <div class="mb-3">
-                <label for="quarantined" class="form-label">Self quarantined / Hospitalized</label>
-                <select name="Self quarantined / Hospitalized" id="quarantined" class="form-select">
-                    <option>Self quarantined</option>
-                    <option>Hospitalized</option>
+                <label for="other_blood" class="form-label">Will they exchange with other blood group?</label>
+                <select name="other_blood" id="other_blood" class="form-select">
+                    <option></option>
+                    <option>Yes, Any blood group is fine.</option>
+                    <option>No, Only requested Blood group</option>
                 </select>
             </div>
-
             <div class="mb-3">
-                <label for="hospital" class="form-label">Hospital name</label>
-                <input type="text" class="form-control" name="Hospital name" id="hospital">
+                <label for="contact_number" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" name="Contact number" id="contact_number">
             </div>
-
             <div class="mb-3">
-                <label for="attender" class="form-label">Hospital attender</label>
-                <input type="text" class="form-control" name="Hospital attender" id="attender">
+                <label for="alternate_number" class="form-label">Alternate Number</label>
+                <input type="text" class="form-control" name="Alternate number" id="alternate_number">
             </div>
-
             <div class="mb-3">
-                <label for="requirement" class="form-label">Requirement</label>
-                <select name="Requirement" id="requirement" class="form-select">
-                    <option>Beds normal</option>
-                    <option>Oxygen</option>
-                    <option>Ventilator</option>
-                    <option>Others</option>
-                </select>
-                <input type="text" class="form-control" name="others" id="others">
+                <label for="address" class="form-label">Complete address</label>
+                <textarea type="text" class="form-control" name="Complete address" id="address"></textarea>
             </div>
-
             <div class="mb-3">
-                <label for="other" class="form-label">Other information</label>
-                <input type="text" class="form-control" name="Other information" id="other">
+                <label for="district" class="form-label">District</label>
+                <input type="text" class="form-control" name="district" id="district">
             </div>
-
+            <div class="mb-3">
+                <label for="other_info" class="form-label">Other Information</label>
+                <textarea type="text" class="form-control" name="Other Information" id="other_info"></textarea>
+            </div>
             <div class="mb-3">
                 <label for="registered-by" class="form-label">Registered by</label>
                 <input type="text" class="form-control" name="Registered by" id="registered-by">
