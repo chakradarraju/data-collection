@@ -29,7 +29,7 @@ form.onsubmit = (ev) => {
 
   const formElements = Array.from(form.elements);
 
-  const patientData = ["Generated from http://covid-data-collection.netlify.com/"];
+  const patientData = ["Generated from http://covid-data-collection.netlify.com/", ""];
   if (formTitle !== null) {
     patientData.push("*" + formTitle + "*");
     patientData.push("");
@@ -37,7 +37,7 @@ form.onsubmit = (ev) => {
 
   formElements.slice(0, -3).forEach((e, i) => {
     var line = `${i + 1}) ${e.name}: ${e.value}`;
-    if (e.dataset.type === "phone" && e.value && e.value.length === 10) line += ` https://wa.me/91${e.value}`;
+    if (e.dataset.type === "phone" && e.value && e.value.length === 10) line += ` (💬: https://wa.me/91${e.value})`;
     patientData.push(line);
   });
 
