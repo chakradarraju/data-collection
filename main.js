@@ -37,7 +37,7 @@ form.onsubmit = (ev) => {
 
   formElements.slice(0, -3).forEach((e, i) => {
     var line = `${i + 1}) ${e.name}: ${e.value}`;
-    if (e.dataset.type === "phone" && e.value && e.value.length === 10) line += ` (💬: https://wa.me/91${e.value})`;
+    if (e.dataset.type === "phone" && e.value && e.value.length === 10) line += `\n(💬: https://wa.me/91${e.value})`;
     patientData.push(line);
   });
 
