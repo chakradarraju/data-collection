@@ -15,30 +15,36 @@
 </head>
 <body class="bg-light">
     <div class="container my-4">
-        <h2 id='form-title' class="py-4">Blood Request Form</h2>
+        <h2 id='form-title' class="py-4">Blood Request Form/ இரத்தம் தேவைகான படிவம்</h2>
         <form action="" id="patient_form">
             <div class="mb-3">
-                <label for="patient_name" class="form-label">Patient Name</label>
+                <label for="patient_name" class="form-label">Patient Name/ நோயாளியின்  பெயர்</label>
                 <input type="text" class="form-control" name="Patient Name" id="patient_name">
             </div>
             <div class="mb-3">
-                <label for="age" class="form-label">Age</label>
+                <label for="age" class="form-label">Age/ வயது</label>
                 <input type="text" class="form-control" name="Age" id="age">
             </div>
             <div class="mb-3">
-                <label for="gender" class="form-label">Gender</label>
-                <input type="text" class="form-control" name="Gender" id="gender">
+                <label for="gender" class="form-label">Gender / பாலினம்</label>
+                <select name="Gender" id="gender" class="form-select">
+                    <option></option>
+                    <option>Transgender/ மூன்றாம் பாலினம்</option>
+                    <option>Male/ ஆண்</option>
+                    <option>Female/ பெண்</option>
+                    <option>Prefer Not to Say/ சொல்ல வேண்டாம் என்று விரும்புங்கள்</option>
+                </select>
             </div>
             <div class="mb-3">
-                <label for="blood" class="form-label">Blood group</label>
+                <label for="blood" class="form-label">Blood group/ இரத்த வகை</label>
                 <input type="text" class="form-control" name="Blood group" id="blood">
             </div>
             <div class="mb-3">
-                <label for="units" class="form-label">No of units required</label>
+                <label for="units" class="form-label">No of units required/ தேவையான அளவு</label>
                 <input type="text" class="form-control" name="No of units required" id="units">
             </div>
             <div class="mb-3">
-                <label for="other_blood" class="form-label">Will they exchange with other blood group?</label>
+                <label for="other_blood" class="form-label">Will they exchange with other blood group?/</label>
                 <select name="Will they exchange with other blood group?" id="other_blood" class="form-select">
                     <option></option>
                     <option>Yes, Any blood group is fine.</option>
@@ -46,27 +52,27 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label for="contact_number" class="form-label">Contact Number (+91)</label>
+                <label for="contact_number" class="form-label">Contact Number/ தொடர்பு எண் (+91)</label>
                 <input type="text" class="form-control" name="Contact number" id="contact_number" data-type="phone">
             </div>
             <div class="mb-3">
-                <label for="alternate_number" class="form-label">Alternate Number (+91)</label>
+                <label for="alternate_number" class="form-label">Alternate Number/ மாற்று எண்(+91)</label>
                 <input type="text" class="form-control" name="Alternate number" id="alternate_number" data-type="phone">
             </div>
             <div class="mb-3">
-                <label for="number_outside" class="form-label">Contact number (outside INDIA)</label>
+                <label for="number_outside" class="form-label">Contact number/தொடர்பு எண் (outside INDIA)</label>
                 <input type="text" class="form-control" name="Contact number (outside INDIA)" id="number_outside">
             </div>
             <div class="mb-3">
-                <label for="address" class="form-label">Complete address</label>
+                <label for="address" class="form-label">Complete address/ முழுமையான முகவரி</label>
                 <textarea type="text" class="form-control" name="Complete address" id="address"></textarea>
             </div>
             <div class="mb-3">
-                <label for="district" class="form-label">District</label>
+                <label for="district" class="form-label">District/ மாவட்டம்</label>
                 <input type="text" class="form-control" name="District" id="district">
             </div>
             <div class="mb-3">
-                <label for="other_info" class="form-label">Other Information</label>
+                <label for="other_info" class="form-label">Other Information/ பிற தகவல்</label>
                 <textarea type="text" class="form-control" name="Other Information" id="other_info"></textarea>
             </div>
             <div class="mb-3">

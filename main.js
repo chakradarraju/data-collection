@@ -13,10 +13,22 @@ var date, regNameEle, formTitle = null;
       regNameEle.value = regName;
 
     const dt = new Date();
+    var nal = dt.getDate();
+    var month = dt.getMonth() + 1;
+    const year = dt.getFullYear();
+    if(nal<10)
+    {
+        nal='0'+nal;
+    }
+
+    if(month<10)
+    {
+        month='0'+month;
+    }
     const hrs = 1 + ((dt.getHours() + 11) % 12);
     const hours = (hrs < 10 ? '0' : '') + hrs;
     const minutes = (dt.getMinutes() < 10 ? '0' : '') + dt.getMinutes();
-    date.value = dt.toISOString().substr(0, 10) + " " + hours + ":" + minutes + " " + (dt.getHours() < 12 ? "AM" : "PM");
+    date.value = nal + "-" + month + "-" + year + " " + hours + ":" + minutes + " " + (dt.getHours() < 12 ? "AM" : "PM");
   }
 })();
 
