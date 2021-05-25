@@ -68,7 +68,7 @@ form.onsubmit = (ev) => {
   var sendToNum = sendToEle.value;
   if (sendToNum && sendToNum.length === 10) sendToNum = '91' + sendToNum;
   console.log('send to', sendToNum);
-  window.location.href = `https://api.whatsapp.com/${sendToNum}/?text=${encodeURIComponent(
+  window.location.href = `https://wa.me/${sendToNum}/?text=${encodeURIComponent(
     patientData.join("\n")
   )}`;
 };
