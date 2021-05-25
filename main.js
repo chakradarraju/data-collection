@@ -1,10 +1,16 @@
-var date, regNameEle, formTitle = null;
+var date, regNameEle, formTitle = null, sendToEle;
 
 (() => {
   window.onload = () => {
     date = document.getElementById("date");
     regNameEle = document.getElementById('registered-by');
     titleEle = document.getElementById('form-title');
+    sendToEle = document.getElementById('send-to');
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const to = urlParams.get('to');
+
+    if (to) sendToEle.value = to;
 
     if (titleEle) formTitle = titleEle.innerText;
 
@@ -59,7 +65,10 @@ form.onsubmit = (ev) => {
     patientData.push(`${e.name}: ${e.value}`);
   });
 
-  window.location.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(
+  var sendToNum = sendToEle.value;
+  if (sendToNum && sendToNum.length === 10) sendToNum = '91' + sendToNum;
+  console.log('send to', sendToNum);
+  window.location.href = `https://api.whatsapp.com/${sendToNum}/?text=${encodeURIComponent(
     patientData.join("\n")
   )}`;
 };
