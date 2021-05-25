@@ -46,7 +46,7 @@ form.onsubmit = (ev) => {
   const formElements = Array.from(form.elements);
 
   var sendToNum = sendToEle.value;
-  const patientData = [`Generated from http://covid-data-collection.netlify.com/${sendToNum?"?to="+sendToNum:""}`, ""];
+  const patientData = [`Generated from http://covid-data-collection.netlify.com/`, ""];
   if (formTitle !== null) {
     patientData.push("*" + formTitle + "*");
     patientData.push("");
